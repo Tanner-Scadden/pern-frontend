@@ -17,3 +17,8 @@ export interface User {
   date_modified?: Date;
   date_deleted?: Date;
 }
+
+export interface SelectOptions {
+  value: number;
+  label: string;
+}

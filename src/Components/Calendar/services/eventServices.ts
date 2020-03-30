@@ -1,9 +1,9 @@
 import axios from 'axios';
 import { Event } from '../../../types';
 
-async function getEvents(): Promise<Array<Event>> {
+async function getEvents(): Promise<Event[]> {
   const response: any = await axios.get(`/api/v1/event`);
-  const events: Array<Event> = response.data;
+  const events: Event[] = response.data;
   return events;
 }
 
